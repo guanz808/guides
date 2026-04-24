@@ -1,219 +1,236 @@
-# Document style guide
+# Writing Style Reference
 
-> Condensed from the Microsoft Writing Style Guide for AI document generation
+> **Core principle:** Voice stays constant. Tone adapts to context. Every document — regardless of field or format — should feel like it came from the same author.
 
-This is the writing and formatting standard for all PKA library documents. It covers voice and tone, audience, capitalization, headings, sentence structure, word choice, punctuation, lists, tables, numbers, and inclusive language. The agent reads this before drafting every document to ensure consistency across the library.
-
----
-
-## 0. Audience — write for non-technical readers
-
-**Every document in this library must be written for readers who are not deeply technical.** Assume the reader understands the subject matter but may not know the technical tools, acronyms, or implementation details behind it.
-
-**Rules:**
-- Explain concepts in plain English before introducing technical terms.
-- Define every acronym and technical term on first use — do not assume the reader knows it.
-- Use analogies and real-world comparisons to explain abstract concepts.
-- Break complex steps into smaller, numbered sub-steps rather than combining them.
-- Prefer concrete examples over abstract descriptions. Show, don't just tell.
-- Avoid implementation-level details unless they are directly needed by the reader.
-- When a simpler word exists, use it. "Start" not "initialize." "Use" not "utilize." "Show" not "surface."
-- If a step could go wrong in a common way, say so — and say what to do about it.
-- Lead every section with a plain-English summary before going into detail.
-
-**Test:** After drafting, ask — "Would someone who has never used this tool before understand this?" If not, simplify.
+> **Audience principle:** Write for non-specialist readers who are familiar with the basics — an informed but non-technical audience with working knowledge but not domain expertise.
 
 ---
 
-## 1. Voice and tone
+## Table of Contents
 
-- **Warm and relaxed** — conversational, grounded, occasionally fun
-- **Crisp and clear** — write for scanning first, reading second; simple above all
-- **Ready to help** — anticipate reader needs; offer the right info at the right time
-
-**Core principles:**
-- Get to the point fast. Lead with the key takeaway.
-- Talk like a person. Use short, everyday words and contractions (it's, you'll, we're).
-- Simpler is better. Short sentences and fragments are easier to scan.
-- Prune every excess word. Omit unnecessary adverbs; use precise one-word verbs.
-
----
-
-## 2. Capitalization
-
-- Use **sentence-style capitalization** everywhere: capitalize only the first word and proper nouns.
-- Never use title case (Like This) for headings, phrases, or UI labels.
-- Never use ALL CAPS for emphasis.
-- Never use all lowercase as a design choice.
-- Capitalize proper nouns: unique people, places, product names, trademarks, book titles.
-- Do not capitalize common technology terms (cloud computing, smartphone, open source).
-
-**Examples:**
-- Correct: `Find a Microsoft partner`
-- Incorrect: `Find a Microsoft Partner`
-- Correct: `Limited-time offer`
-- Incorrect: `Limited-Time Offer`
+1. [Voice](#1-voice)
+2. [Tone](#2-tone)
+3. [Audience](#3-audience)
+4. [Word choice](#4-word-choice)
+5. [Headings and structure](#5-headings-and-structure)
+6. [Lists](#6-lists)
+7. [Tables](#7-tables)
+8. [Conventions](#8-conventions)
+9. [Text formatting](#9-text-formatting)
+10. [Document types](#10-document-types)
+11. [Quick reference checklist](#11-quick-reference-checklist)
 
 ---
 
-## 3. Headings
+## 1. Voice
 
-- Keep headings **short**; put the most important idea first.
-- Use sentence-style capitalization (no periods at the end).
-- A question mark or exclamation point may be used if needed for meaning.
-- Use headings to outline the document — make them specific and interesting.
-- Use **parallel structure** for all headings at the same level (e.g., all noun phrases or all verb phrases).
-- Avoid two headings in a row without body text between them.
-- Don't use ampersands (&) or plus signs (+) in headings unless referencing UI.
-- Avoid hyphens in headings when possible (can cause awkward line breaks on mobile).
-- Use `vs.` (not `v.` or `versus`) in headings.
+Voice is who you are as a writer. It stays the same across every document, field, and format.
 
-**Heading hierarchy:**
-- Top-level: major subjects, as specific as possible
-- Second-level: distinct subtopics only (skip if fewer than two subtopics exist)
-- Lower levels: increasingly specific details
+| Voice attribute | What it sounds like | What it doesn't sound like |
+|---|---|---|
+| Clear | Direct, specific, no filler | Vague, padded, over-qualified |
+| Helpful | Anticipates questions, guides the reader | Assumes knowledge, skips steps |
+| Human | Conversational, warm, real | Robotic, formal, stiff |
+| Confident | States things directly | Hedges with "might," "could," "perhaps" |
 
----
+**Rule:** Write like a knowledgeable colleague, not a manual. Inform without lecturing.
 
-## 4. Sentences and paragraphs
+**Rule:** Be consistent. A reader encountering documents from the same source should feel the same authorial presence every time.
 
-- Write **short, simple sentences** using standard word order: subject → verb → object.
-- Use **present tense** whenever possible (easier to read than past or future).
-- Use **active voice** most of the time (subject performs the action).
-- Use passive voice only to avoid blaming the reader or when the receiver of the action is the focus.
-- Use **second person** (you/your) to address the reader directly.
-- Avoid first-person plural (we/us) unless needed for clarity.
-- Keep paragraphs **3–7 lines** long; single-line paragraphs are acceptable.
-- Avoid chains of more than two prepositional phrases in a row.
-- Start most statements with a **verb**; edit out "you can" and "there is/are/were."
-- Include "that" and "who" for clarity (they help readers and translation tools).
+**Rule:** Use common contractions (it's, you'll, we're) — they keep writing human and readable.
 
 ---
 
-## 5. Word choice
+## 2. Tone
 
-- Choose **simple, precise, conversational words**.
-- Use common contractions (that's, don't, you'll) — they're friendly and readable.
-- Avoid words with multiple meanings; if you mean the same thing, use the same word.
-- Avoid jargon; use plain language whenever possible.
-- Avoid idioms, colloquial expressions, and culture-specific references.
-- Do not invent new words if one already exists.
-- Define technical terms in context if the audience may not know them.
-- Do not attribute human characteristics to devices or products.
-- Avoid modifier stacks (long chains of modifying words before a noun).
+Tone is how your voice sounds in a specific moment. It shifts based on the document type, the subject, and what the reader needs.
 
----
+| Situation | Tone | Characteristics |
+|---|---|---|
+| Instructional (how-tos, procedures) | Direct, neutral | Step-by-step, no ambiguity, task-focused |
+| Explanatory (guides, explainers) | Warm, patient | Context first, examples throughout, no assumptions |
+| Reference (cheat sheets, tables) | Neutral, compact | Dense, scannable, minimal prose |
+| Formal (reports, proposals) | Professional, measured | Structured, evidence-based, objective |
+| Urgent (warnings, alerts) | Serious, concise | Lead with the issue, state the action, no filler |
+| Conversational (emails, briefs) | Relaxed, direct | Short, natural, to the point |
 
-## 6. Punctuation
+**Rule:** Adjust tone to match what the reader needs — not what feels comfortable to write.
 
-- End every sentence with a period, even two-word sentences.
-- Use **one space** after periods, question marks, exclamation marks, and colons.
-- Use the **Oxford (serial) comma** in lists of three or more: Android, iOS, and Windows.
-- Use a comma after introductory phrases and to join independent clauses with a conjunction.
-- Use **em dashes** (—) with no spaces around them to set off phrases.
-- Use **en dashes** (–) for ranges (pages, dates, times) with no spaces.
-- Use **hyphens** for compound modifiers before nouns; avoid them in headings.
-- Do not use a slash (/) as a substitute for "or."
-- Use exclamation points sparingly. Use question marks sparingly.
-- Place closing quotation marks outside commas and periods; inside other punctuation.
-- Do not use apostrophes for possessives of "it" (use "its" not "it's" for possession).
+**Rule:** Tone changes; voice doesn't. A clear, human quality should be present even in the most formal document.
 
-**Headings and list items:** Skip end punctuation unless items are complete sentences.
+> **Test:** Read the document aloud. If it sounds like a legal contract or instruction manual, reduce the formality. If it sounds like a casual chat, add more structure.
 
 ---
 
-## 7. Lists
+## 3. Audience
 
-- Use lists to present complex information in a scannable way.
-- Lists should have **at least two items** and ideally no more than **seven items**.
-- Each item should be short enough that a reader can see 2–3 items at a glance.
-- Make all items in a list **parallel in structure** (e.g., all noun phrases or all verb phrases).
-- Introduce every list with a heading, complete sentence, or fragment ending in a colon.
+The target reader is:
 
-**Bulleted lists** — for items that share something in common but have no required order.
+- a non-specialist who is familiar with the basics
+- an informed but non-technical audience
+- a reader with working knowledge but not domain expertise
+- a broad audience with some background in the topic
+
+**Rule:** Explain concepts in plain English before introducing technical terms.
+
+**Rule:** Define every acronym and term on first use.
+
+**Rule:** Prefer concrete examples over abstract descriptions. Show, don't just tell.
+
+**Rule:** Avoid implementation-level details unless directly needed by the reader.
+
+**Rule:** If something could go wrong, say so — and say what to do about it.
+
+> **Test:** Would someone familiar with the topic but new to this context understand this? If not, simplify.
+
+---
+
+## 4. Word choice
+
+**Rule:** Choose simple, precise words. When a simpler word exists, use it.
+
+**Rule:** Use the same word for the same thing throughout — don't vary terms for style.
+
+**Rule:** Avoid jargon, idioms, and modifier stacks — long chains of modifying words before a noun.
+
+**Rule:** Define technical terms in context. Never attribute human characteristics to devices or products.
+
+### Prefer → avoid
+
+| Prefer | Avoid |
+|---|---|
+| `start` | `initialize`, `initiate` |
+| `use` | `utilize`, `leverage` |
+| `show` | `surface`, `expose` |
+| `end` | `terminate`, `discontinue` |
+| `get` | `obtain`, `retrieve` |
+| `need` | `require`, `necessitate` |
+| `help` | `facilitate`, `enable` |
+| `change` | `modify`, `alter` |
+| `check` | `verify`, `validate` |
+| `set up` | `configure`, `instantiate` |
+
+---
+
+## 5. Headings and structure
+
+**Rule:** Lead with what matters most. Put the key point at the top of every section.
+
+**Rule:** Keep headings short. Sentence-style capitalization. No period at the end.
+
+**Rule:** Use parallel structure at the same heading level — all noun phrases or all verb phrases.
+
+**Rule:** Avoid two headings in a row without body text between them.
+
+**Rule:** Include a table of contents with links in longer documents.
+
+### Heading hierarchy
+
+| Level | Purpose | Guidance |
+|---|---|---|
+| Top-level (`#`) | Document title | One per document |
+| Second-level (`##`) | Major sections | As specific as possible |
+| Third-level (`###`) | Sub-topics | Skip if fewer than two subtopics exist |
+
+---
+
+## 6. Lists
+
+**Rule:** Use lists to present complex information in a scannable way. At least two items, no more than seven.
+
+**Rule:** Make all items parallel in structure — all noun phrases or all verb phrases.
+
+**Rule:** Introduce every list with a heading, sentence, or fragment ending in a colon.
+
+### List types
+
+**Bulleted lists** — for items with no required order.
 
 **Numbered lists** — for sequential steps or prioritized items.
 
-**Term lists** — for defining a set of terms:
-- Use a bulleted list.
-- Format the term in **bold**, sentence case.
-- Follow with a period, then the definition starting with a capital letter and ending with a period.
+**Term lists** — for defining terms. Format the term in **bold**, follow with a period, then the definition starting with a capital letter.
 
-**Capitalization:** Begin each list item with a capital letter.
+### Example — numbered list
 
-**Punctuation:**
-- Use a period after items that are complete sentences or complete an introductory phrase.
-- Skip periods if all items are three words or fewer, or are labels, headings, or strings.
-- Do not use semicolons, commas, or conjunctions at the end of list items.
+```markdown
+To reset your password:
 
----
+1. Open the sign-in page.        ← capital letter + period (complete sentence)
+2. Select Forgot password.
+3. Enter your email address.
+4. Check your inbox for a reset link.
+```
 
-## 8. Tables
-
-- Use tables for **structured data**: values, simple instructions, categories with examples, or items with two or more attributes.
-- Do not use a table just to list similar items — use a list instead.
-- Tables must have **two or more rows** (plus a header row) and **two or more columns**.
-- Place the row-identifying information in the **leftmost column**.
-- Make cell entries **parallel** (all noun phrases or all verb phrases within a column).
-- Never leave a cell blank — use "Not applicable" or "None."
-- Keep cell text brief, ideally one line. Limit the number of columns.
-- Do not use a colon after introductory text — use a complete sentence ending in a period.
-- Use **sentence-style capitalization** for table titles, column headers, and cell text.
-- Do not use ellipses at the end of column headers.
-
-**Header rows:**
-- Make header text visually distinct (bold in Markdown: `| **Column** |`).
-- Use specific column names (e.g., "Employee" not "Name").
-- In long tables, keep the header row visible (repeat or freeze it).
+**Rule:** Begin each item with a capital letter. Use periods for complete sentences; skip them for short labels.
 
 ---
 
-## 9. Numbers
+## 7. Tables
+
+**Rule:** Use tables for structured data with two or more attributes. Use a list for similar items without attributes.
+
+**Rule:** Every table needs a header row, two or more columns, and two or more data rows.
+
+**Rule:** Place row-identifying information in the leftmost column. Never leave a cell blank — use "Not applicable" or "None."
+
+**Rule:** Keep cell text brief and parallel. Use sentence-style capitalization throughout.
+
+```
+✓ | Environment | Purpose          |
+✗ | Environment | Purpose...       |
+
+✓ | Dev         | Local testing    |
+✗ |             | Local testing    |   ← never leave a cell blank
+```
+
+---
+
+## 8. Conventions
+
+### Numbers
 
 | Use spelled-out words for | Use numerals for |
 |---|---|
 | Zero through nine (general text) | 10 or greater |
-| At the start of a sentence | Measurements (distance, weight, pixels, etc.) |
-| Ordinals in text (first, second) | Time of day |
-| | Percentages (use %, not "percent") |
-| | Dimensions and ranges |
+| At the start of a sentence | Measurements, time, percentages, dimensions |
+| Ordinals in text (first, second) | Ranges |
 
-- Use commas in numbers with **4 or more digits** (e.g., 1,024).
-- Do not use ordinal numbers for dates (write "June 5," not "June 5th").
-- Always spell out the name of the month.
-- Use a minus sign (not an en dash) for negative numbers.
-- Hyphenate compound numbers when spelled out (twenty-one).
-- Spell out fractions; hyphenate them (one-third, three-fourths).
+```
+✓ Three failed attempts    ✗ 3 failed attempts
+✓ 12 retries               ✗ Twelve retries
+✓ 75%                      ✗ 75 percent
+✓ 1,024 files              ✗ 1024 files
+```
 
----
+### Dates and times
 
-## 10. Dates and times
+**Rule:** Use Month Day, Year format. No ordinals.
 
-- Date format: **Month Day, Year** — e.g., July 31, 2025 (not 31 July 2025).
-- Do not use ordinal numbers in dates (not "July 31st").
-- Capitalize days of the week and months; avoid abbreviations unless space is limited.
-- Use **AM** and **PM** (with a space before them): 10:45 AM, 6:30 PM.
-- Use numerals for times: 2:00, 4:15, 7:30. Always include AM or PM.
-- Use "noon" and "midnight" instead of 12:00 PM/12:00 AM.
-- Include the time zone when discussing events beyond a local audience.
-- Use "to" in time ranges in text; use an en dash (–) in schedules or tables.
-- Do not refer to seasons if months or calendar quarters will do.
+```
+✓ July 31, 2025      ✗ 31 July 2025      ✗ July 31st, 2025
+```
 
----
+**Rule:** Use AM and PM with a space before them. Use "noon" and "midnight" instead of 12:00 PM and 12:00 AM.
 
-## 11. Acronyms and abbreviations
+```
+✓ 10:45 AM      ✗ 10:45am      ✗ 10:45 a.m.
+```
 
-- Spell out the term on first use; include the acronym in parentheses. Use the acronym after.
-- Only use acronyms your audience is familiar with.
-- Do not introduce an acronym used only once.
-- Lowercase all words in the spelled-out form unless they are proper nouns.
-- Form plurals like any noun (APIs, not API's).
-- Use "a" or "an" based on how the acronym is pronounced (an ISP, a SQL database).
-- Always spell out Microsoft product and feature names.
+### Acronyms and abbreviations
+
+**Rule:** Spell out the term on first use; include the acronym in parentheses. Use the acronym after.
+
+```
+search engine optimization (SEO) → SEO from that point forward
+```
+
+**Rule:** Only use acronyms your audience already knows. Do not introduce an acronym used only once.
+
+**Rule:** Form plurals like any noun (APIs, not API's).
 
 ---
 
-## 12. Text formatting
+## 9. Text formatting
 
 | Element | Format |
 |---|---|
@@ -221,59 +238,77 @@ This is the writing and formatting standard for all PKA library documents. It co
 | Key names and keyboard shortcuts | **Bold** |
 | New terms being defined | *Italic* |
 | Placeholders in syntax | *Italic* |
-| Mathematical variables | *Italic* |
 | Command-line commands and code | `Code style` |
-| Error messages (when referenced in text) | "Quotation marks" |
+| Error messages (in running text) | "Quotation marks" |
 | File name extensions | Lowercase (`.docx`) |
 | URLs | All lowercase |
 
-- Use **left alignment** only. Never center text or justify both margins.
-- Do not compress line spacing.
-- Avoid widows, orphans, and lines ending in hyphens.
+> **Alignment:** Left alignment only. Never center text or justify both margins.
 
 ---
 
-## 13. Structure and scannability
+## 10. Document types
 
-- **Lead with what matters most** — put key information at the top.
-- Write short headings, short sentences, and short paragraphs.
-- Use consistent formatting patterns so readers develop familiarity.
-- Place important keywords **near the beginning** of headings and paragraphs.
-- Include a table of contents with links in longer documents.
-- Use parallel sentence structures when comparing things or writing list items.
-- For procedures, always use numbered steps with imperative verbs and sentence-style capitalization.
+Voice stays the same across all of these. Structure and tone shift to fit the purpose.
+
+### How-to / procedure
+
+- Lead with the outcome: what the reader will be able to do.
+- Use numbered steps with imperative verbs. One action per step.
+- Include a prerequisites section if setup is required before starting.
+
+### Guide / explainer
+
+- Lead with context: why this matters before how it works.
+- Build from simple to complex. Use examples and comparisons throughout.
+- Aim for understanding, not just instruction.
+
+### Reference / cheat sheet
+
+- Dense and scannable. No prose introduction.
+- Tables and lists only. Assume the reader knows what they're looking for.
+- Alphabetical or logical order.
+
+### Report / analysis
+
+- Lead with the conclusion, not the methodology.
+- Separate findings from recommendations.
+- Use headings to signal structure. Keep any executive summary to one page.
+
+### Proposal
+
+- Lead with the problem, then the solution.
+- Be specific about scope, timeline, and outcomes.
+- Anticipate objections and address them directly.
+- Avoid filler phrases ("As a leading provider of...").
+
+### Email / brief communication
+
+- Subject line = the point, in ten words or fewer.
+- First sentence = what you need from the reader.
+- One topic per message. End with a clear action or next step.
 
 ---
 
-## 14. Inclusive language
+## 11. Quick reference checklist
 
-- Use **people-first language** by default: "person who is blind," "person with a disability."
-- Never use language with offensive connotations.
-- Do not use gendered pronouns (he/she) in generic references. Use "you," a role name, or "they."
-- Use "they" as a singular non-binary pronoun when appropriate.
-- Do not attribute gender to roles unless referring to a specific real person.
-
----
-
-## Quick reference checklist
-
+- [ ] Voice is consistent — clear, helpful, human, confident
+- [ ] Tone matches the document type and context
+- [ ] Audience needs are addressed — no assumed expertise
 - [ ] Sentence-style capitalization throughout (headings, lists, table headers)
-- [ ] Active voice, present tense
 - [ ] Short sentences; one idea per sentence
 - [ ] Oxford comma used in all series
 - [ ] No spaces around em dashes; en dashes for ranges
-- [ ] One space after all end punctuation
 - [ ] Numbers zero–nine spelled out; 10+ as numerals
 - [ ] Dates in "Month Day, Year" format; no ordinals
 - [ ] Lists are parallel, introduced properly, and punctuated consistently
-- [ ] Tables have header rows; no blank cells; sentence-style capitalization
+- [ ] Tables have header rows; no blank cells
 - [ ] Acronyms spelled out on first use
-- [ ] Bold used for UI labels; italic for new terms and placeholders
+- [ ] Bold for UI labels; italic for new terms and placeholders
 - [ ] No jargon; plain language preferred
 - [ ] People-first inclusive language
 
 ---
 
-## References
-
-- [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-guide/welcome/)
+*Last updated: 2026-04-24 — v3.0*
+*Approach: informed by the Mailchimp Content Style Guide*
